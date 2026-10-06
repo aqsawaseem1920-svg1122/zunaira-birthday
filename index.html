@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday Zunaira 💗</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= MUSIC ================= -->
+
+    <audio id="bgMusic" loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="musicBtn" class="music-btn" onclick="toggleMusic()">
+        🔇
+    </button>
+
+
+    <!-- ================= FLOATING HEARTS ================= -->
+
+    <div class="floating-hearts">
+
+        <span>💗</span>
+        <span>💕</span>
+        <span>💖</span>
+        <span>🌸</span>
+        <span>💗</span>
+        <span>✨</span>
+        <span>💕</span>
+        <span>💖</span>
+
+    </div>
+
+
+    <!-- ================= OPENING ================= -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <div class="gift">🎁</div>
+
+            <p class="small-text">
+                A little surprise for you...
+            </p>
+
+            <h1>Hey Zunaira! 💗</h1>
+
+            <p>
+                I made something small for you...
+                <br>
+                so don't just sit there 👀
+            </p>
+
+            <button class="main-btn" onclick="openWish()">
+                Open Your Surprise ✨
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= BIRTHDAY ================= -->
+
+    <section class="birthday-section">
+
+        <div class="section-content">
+
+            <span class="emoji">🎂</span>
+
+            <h2 id="birthdayTitle"></h2>
+
+            <p>
+                Today is all about celebrating you. 🥹✨
+            </p>
+
+            <div class="birthday-card">
+
+                <span>🎀</span>
+
+                <p>
+                    One more year older...
+                    <br>
+                    but still the same little girl at heart. 🥹💗
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MEMORIES ================= -->
+
+    <section class="memories-section">
+
+        <div class="section-content">
+
+            <span class="emoji">🧸</span>
+
+            <h2>Those Little Memories</h2>
+
+            <p>
+                I'm just really thankful for all those little memories
+                we have from back then. 🥹❤️
+            </p>
+
+            <p>
+                Kabhi kabhi sochti hoon ke hum kitne chotay thay
+                aur ab dekho, life kitni change ho gayi hai. 🥹
+            </p>
+
+            <div class="memory-box">
+
+                <span>🧸</span>
+                <span>🌸</span>
+                <span>🎀</span>
+                <span>💗</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PHOTOS ================= -->
+
+    <section class="photos-section">
+
+        <div class="section-content">
+
+            <span class="emoji">📸</span>
+
+            <h2>A Few Pictures of You 💗</h2>
+
+            <p class="photo-subtitle">
+                Because obviously, the birthday girl deserves
+                her own little gallery. 🎀
+            </p>
+
+            <div class="photo-grid">
+
+                <div class="photo-card">
+
+                    <img src="photo1.jpg" alt="Zunaira">
+
+                    <span>💗</span>
+
+                </div>
+
+
+                <div class="photo-card">
+
+                    <img src="photo2.jpg" alt="Zunaira">
+
+                    <span>🌸</span>
+
+                </div>
+
+
+                <div class="photo-card">
+
+                    <img src="photo3.jpg" alt="Zunaira">
+
+                    <span>✨</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= GAME ================= -->
+
+    <section class="game-section">
+
+        <div class="section-content">
+
+            <span class="emoji">🎮</span>
+
+            <h2>Catch the Hearts 💗</h2>
+
+            <p>
+                Okay birthday girl...
+                <br>
+                let's see how fast you are. 👀
+            </p>
+
+            <div class="score-box">
+
+                Hearts caught:
+                <strong id="score">0</strong> / 10
+
+            </div>
+
+
+            <div id="gameArea" class="game-area">
+
+                <div id="startGame">
+
+                    <button class="main-btn" onclick="startGame()">
+                        Start Game 💗
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div id="gameMessage" class="game-message"></div>
+
+
+            <div id="secretMessage" class="secret-message">
+
+                <div class="secret-heart">
+                    💗
+                </div>
+
+                <h3>
+                    Yayyy! You did it! 🥹
+                </h3>
+
+                <p>
+                    You caught all the hearts...
+                    <br>
+                    but here's one more thing I wanted you to know. 🤍
+                </p>
+
+                <p>
+                    You're genuinely one of the sweetest parts
+                    of my childhood memories. 🌸
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= LETTER ================= -->
+
+<section class="letter-section">
+
+    <div class="letter-card">
+
+        <span class="emoji">
+            💌
+        </span>
+
+        <h2>
+            A Little Birthday Note
+        </h2>
+
+        <div class="letter-text">
+
+            <p>
+                Happy birthday to one of my forever lovely friend who makes life so much better just by being in it. 💕✨ I wanted to take a moment to tell you how much your friendship means to me. 🌸 You have this amazing way of making everyone around you feel seen and valued, and I'm grateful every day that I get to call you my friend. 🙏💖
+            </p>
+
+            <p>
+                On your special day, I hope you feel as loved and appreciated as you make everyone else feel. 🎉🎊 You deserve all the happiness in the world—today and every day. 🌟💫 Thank you for being the kind friend who shows up, who listens, and who makes even ordinary moments feel special. 🦋✨ Life is so much brighter with you in it. ☀️🌼
+            </p>
+
+            <p>
+                Meri dil se dua hai ke Allah tumhari har achi dua qubool kare, tumhein hamesha khush rakhe, tumhari life mein sukoon, mohabbat aur bohat saari kamyabi de. Jo bhi tum dil se chahti ho, Allah tumhein us se bhi behtar ata kare. Ameen. 🤲🏻✨💝🤍🌺
+            </p>
+
+            <p>
+                May life always be kind to you. 🌸💐 You deserve beautiful things, beautiful moments, and a beautiful life. 🎂🤍✨🎀
+            </p>
+
+            <p>
+                Happy Birthday once again Zunaira! 🎂🥹🎈💖🌸🎊
+                <br>
+                Have the best day, you deserve it! ❤️🌈✨💕🦋
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+    <!-- ================= MAKE A WISH ================= -->
+
+    <section class="wish-section">
+
+        <div class="section-content">
+
+            <span class="emoji">
+                🌙
+            </span>
+
+            <h2>
+                Make a Wish ✨
+            </h2>
+
+            <p>
+                Close your eyes for a second...
+                <br>
+                think of something you really want. 🤍
+            </p>
+
+
+            <button class="main-btn" onclick="makeWish()">
+                Make My Wish 🌟
+            </button>
+
+
+            <p id="wish-message"></p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FINAL SURPRISE ================= -->
+
+    <section class="final-section">
+
+        <div class="final-content">
+
+            <div class="envelope" onclick="openLetter()">
+
+                <div class="envelope-top"></div>
+
+                <div class="envelope-body">
+                    💌
+                </div>
+
+            </div>
+
+
+            <p class="click-text">
+                There's one last little thing for you... 👀
+            </p>
+
+
+            <button class="main-btn" onclick="openLetter()">
+                Open It 💌
+            </button>
+
+
+            <div id="finalLetter" class="final-letter">
+
+                <div class="big-heart">
+                    💗
+                </div>
+
+                <h2>
+                    For You, Zunaira
+                </h2>
+
+
+                <p>
+                    Some friendships become a part of your story
+                    without you even realizing it.
+                </p>
+
+
+                <p>
+                    And when I look back at my childhood,
+                    you're a very special part of that story. 🥹🤍
+                </p>
+
+
+                <p>
+                    So today, I just want you to know...
+                </p>
+
+
+                <h3>
+                    I'm really glad I got to grow up with you. 🌸
+                </h3>
+
+
+                <div class="final-birthday">
+                    Happy Birthday, Zunaira! 🎂💗
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+        Made with lots of love & a little bit of childhood memories. 💗
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
